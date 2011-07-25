@@ -4,7 +4,7 @@ Donate link: http://letusbuzz.com/go/donate/
 Tags: Simple social share, social share, Facebook, Like, google, google +1, google plusone, twitter, tweet, facebook share, plusone, linkedin, stumbleupon
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 A very simple social share scrolling plugin with just 6 social icons (Twitter, FB Like, Google +1, Linkedin, FB Share and Stumbleupon) 
 

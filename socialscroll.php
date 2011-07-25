@@ -3,7 +3,7 @@
 Plugin Name: Scrolling Twitter Like Google +1 Linkedin and Stumbleupon
 Plugin URI: http://letusbuzz.com
 Description: Scrolling Twitter Like Google +1 Linkedin and Stumbleupon
-Version: 1.0
+Version: 1.0.1
 Author: Sudipto Pratap Mahato
 Author URI: http://letusbuzz.com
 */
@@ -54,29 +54,34 @@ padding-top:0px;
 padding-bottom:0px;
 }
 .scrollbox > ul > li {
-background: url("<?php echo $bari; ?>") no-repeat scroll 0 0 transparent;
+background: url("<?php echo $bari; ?>") no-repeat scroll 0 0 transparent !important;
 height: <?php echo $barh; ?>;
 list-style: none outside none !important;
 position: relative;
 width: <?php echo $barw; ?>;
-padding-left:0px;
-padding-right:0px;
-padding-top:0px;
-padding-bottom:0px;
+padding:0px !important;
 cursor: pointer;
+margin:0 !important;
+}
+.schildren>li{
+margin:0 !important;
+padding:0 !important;
+background:transparent !important;
+list-style:none !important;
 }
 .socialiconss{
 float:left;
 }
 #scrollbox {
     display: block;
-    margin-left: <?php echo $leftpad; ?>;
+    margin-left: <?php echo $leftpad; ?> !important;
     position: absolute;
 }
 #scrollbox ul{
 margin: 0px !important;
 padding:0px !important;
 position: relative;
+z-index: 9999;
 }
 </style>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js'></script>
@@ -218,7 +223,7 @@ $ptitle = get_the_title($post->ID);
 $eptitle=str_replace(array(">","<"),"",$ptitle);
 $twsc='';$flsc='';$gpsc='';$fssc='';
 
-$sharelinks.='<div class="scrollbox" id="scrollbox"><ul><li><ul class="schildren"><li><div id="tray" style="display: block;margin-left: 10px;margin-top: 5px;">';
+$sharelinks.='<div class="scrollbox" id="scrollbox"><ul><li><ul class="schildren"><li style="margin: 0pt ! important; list-style: none outside none !important; padding: 0pt !important;"><div id="tray" style="display: block;margin-left: 10px;margin-top: 5px;">';
 
 $sharelinks.='<div class="socialscroll" ><div class="social4in" style="position:relative;">';
 
