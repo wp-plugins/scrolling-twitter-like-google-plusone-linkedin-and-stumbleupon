@@ -24,6 +24,8 @@ Check out the options page of the plugin by clicking on the link below
 Your suggestion is always appreciated.
 [Comment on this page ](http://letusbuzz.com/scrolling-tweet-like-google-1-linkedin-and-stumbleupon/) to suggest a feature or to report a bug.
 
+[Author's site](http://letusbuzz.com/)
+
 == Installation ==
 
 1. Upload `scrolling-tweet-like-share-and-google-1` folder to the `/wp-content/plugins/` directory
