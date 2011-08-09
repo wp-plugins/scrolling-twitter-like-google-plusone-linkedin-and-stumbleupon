@@ -3,7 +3,7 @@
 Plugin Name: Scrolling Twitter Like Google +1 Linkedin and Stumbleupon
 Plugin URI: http://letusbuzz.com
 Description: Scrolling Twitter Like Google +1 Linkedin and Stumbleupon
-Version: 1.0.1
+Version: 1.0.2
 Author: Sudipto Pratap Mahato
 Author URI: http://letusbuzz.com
 */
@@ -31,6 +31,7 @@ else $bari=get_option('ss_baripath','');
 $barw=get_option('ss_barwidth','25px');
 $barh=get_option('ss_barheight','155px');
 if((is_single()&&get_option('ss_dpost','checked')=='checked')||(is_page()&&get_option('ss_dpage','checked')=='checked')){
+wp_print_scripts( 'jquery' );
 ?>
 <style>
 .scrollbox ul ul {
@@ -84,7 +85,6 @@ position: relative;
 z-index: 9999;
 }
 </style>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js'></script>
 <script type="text/javascript">
 (function($) {
 	$(function() {
